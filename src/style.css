@@ -20,6 +20,12 @@ main {
     left: 70%;
 }
 
+.knapp:hover{
+    border: 1px solid rgb(191, 146, 91);
+    background: rgb(178, 149, 114);
+    transition: 1s;
+}
+
 .logga{
     font-family: 'Inter', sans-serif;
     font-weight: bold;
@@ -48,11 +54,14 @@ nav {
     padding: 8px;
     position: relative;
 }
-
 .nav-knappar ul li a{
     color: rgb(252, 252, 252);
     text-decoration: none;
     font-size: 15px;
+}
+.nav-knappar ul li a:hover{
+    color: rgb(191, 146, 91);
+    transition: 0.3s;
 }
 
 .wtb{
@@ -86,11 +95,12 @@ nav {
 .text{
     color: rgb(252, 252, 252);
     position: absolute;
+    font-size: 16px;
     top: 45%;
     left: 70%;
     transform: translate(-50%);
     text-align: left;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 
@@ -130,7 +140,37 @@ section:nth-child(odd) {
     margin-top: 20%;
 }
 
+.fotwrap{
+    background-color: rgb(22, 22, 22);
+}
+
 .fot{
-    background-color: black;
+    width: 80%;
+    height: 25vh;
+    background-color: rgb(22, 22, 22);
+    color: white;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.fot-titel{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.fot-titel h2{
+    margin-bottom: 2rem;
+}
+
+.fot-titel a{
+    color: white;
+    text-decoration: none;
+}
+
+* a:hover{
+    color: rgb(191, 146, 91);
+    transition: 0.3s;
 }
