@@ -1,3 +1,9 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* First Page */
 main {
     min-height: 100vh;
     width: 100%;
@@ -6,14 +12,17 @@ main {
     position: relative;
 }
 
-.knapp:hover{
-    border: 1px solid rgb(191, 146, 91);
-    background: rgb(191, 146, 91);
-    transition: 1s;
-    color: rgb(252, 252, 252);
+header{
+    z-index: 10;
+    position: fixed;
+    background-color: #0005;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100%;
 }
-
-.logga{
+/* Nav */
+.logo{
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     color: rgb(252, 252, 252);
@@ -30,38 +39,28 @@ nav {
     width: 100%;
 }
 
-header{
-    z-index: 10;
-    position: fixed;
-    background-color: #0005;
-    display: flex;
-    font-weight: bold;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.nav-knappar{
+.nav-btn{
     flex: 1;
     text-align: right;
 }
 
-.nav-knappar ul li{
+.nav-btn ul li{
     list-style: none;
     display: inline-block;
     padding: 8px;
     position: relative;
 }
-.nav-knappar ul li a{
+.nav-btn ul li a{
     color: rgb(252, 252, 252);
     text-decoration: none;
     font-size: 15px;
 }
-.nav-knappar ul li a:hover{
+.nav-btn ul li a:hover{
     color: rgb(191, 146, 91);
     transition: 0.3s;
 }
 
-.nav-knappar ul li::after{
+.nav-btn ul li::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -71,11 +70,11 @@ header{
     transition: 0.5s;
 }
 
-.nav-knappar ul li:hover::after{
+.nav-btn ul li:hover::after{
     width: 100%;
 }
 
-.kontent {
+.content {
     font-family: 'Inter', sans-serif;
     position: absolute;
     top: 28%;
@@ -84,6 +83,7 @@ header{
 
 .wtb{
     color: rgb(191, 146, 91);
+    font-size: medium;
 }
 .dreams{
     color:rgb(252, 252, 252);
@@ -109,7 +109,7 @@ header{
     margin-top: 5%;
 }
 
-.knapp {
+.main-btn {
     display: inline-block;
     text-decoration: none;
     color: rgb(191, 146, 91);
@@ -120,13 +120,13 @@ header{
     cursor: pointer;
     margin-top: 5%;
 }
-
-* {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
+.main-btn:hover{
+    border: 1px solid rgb(191, 146, 91);
+    background: rgb(191, 146, 91);
+    transition: 1s;
+    color: rgb(252, 252, 252);
 }
-
+/* Products Part Of Page */
 .sektion{
     align-items: center;
     justify-content: space-between;
@@ -152,6 +152,9 @@ section:nth-child(odd) {
 
 .productimg{
     border-radius: 50%;
+    margin-top: -20%;
+    z-index: 1;
+    position: relative;
 }
 
 .stext{
@@ -164,6 +167,8 @@ section:nth-child(odd) {
     color: rgb(191, 146, 91);
     transition: 0.3s;
 }
+
+/* About Part Of Page */
 .aboutwrap{
     font-family: 'Inter', sans-serif;
     display: flex;
@@ -195,20 +200,111 @@ section:nth-child(odd) {
     font-size: small;
     color: rgb(191, 146, 91);
 }
+/* Testimonials */
+.testimonaial-wraper{
+    width: 100%;
+    min-height: 60vh;
+    background-color:rgb(235, 232, 222);
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.testimonials-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: rgb(192, 152, 104);
+}
+.testimonials-title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    top: 3%;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2%;
+    color: rgb(67, 65, 65)
+}
+.testimonials{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    height: 32vh;
+    margin-bottom: 3%;
+    color: rgb(67, 65, 65);
+}
+.test-section{
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: white;
+}
+.customer{
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
 
+.reviewpic{
+    border-radius: 50%;
+}
+
+.rogerscott{
+    padding-left: 5%;
+}
+.rogerscott h4{
+    color: rgb(192, 152, 104);
+}
+
+.stars{
+    font-size: 36px;
+    color: rgb(192, 152, 104);
+}
+
+.quotes{
+    font-size: large;
+    background-color: rgb(192, 152, 104);
+    border-radius: 50%;
+    width: 20%;
+    height: 12%;
+    padding-top: 5%;
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.fa-quote-left{
+    color: white;
+}
+
+/* Footer */
 .fotwrap{
     background-color: rgb(1, 1, 1);
 }
 
 .fot{
     width: 80%;
-    height: 25vh;
+    height: 30vh;
     background-color: rgb(1, 1, 1);
     color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
+}
+
+.footer-btn::before{
+    content: "> ";
+}
+
+.footer-btn:hover{
+    color: rgb(191, 146, 91);
+    transition: 0.3s;
 }
 
 .fot-titel{
@@ -229,4 +325,41 @@ section:nth-child(odd) {
 
 .fot-titel p{
     color: rgb(67, 65, 65);
+}
+
+.socials-wrap{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.socials{
+    background-color: rgb(192, 152, 104);
+    border-radius: 50%;
+    padding: 5%;
+    align-items: center;
+}
+.fa-brands{
+    color: rgb(252, 252, 252);
+}
+
+.fa-map{
+    color: rgb(192, 152, 104);
+}
+.fa-phone{
+    color: rgb(192, 152, 104);
+}
+.fa-paper-plane{
+    color: rgb(192, 152, 104);
+}
+
+
+@media(max-width: 800px){
+    .nav-btn{
+        flex-direction: row;
+    }
+    main{
+        background-image: cover;
+    }
+
 }
