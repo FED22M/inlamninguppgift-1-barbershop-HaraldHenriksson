@@ -50,21 +50,7 @@ button{
     margin: 0;
     padding: 0;
   }
-/*
-  .menu > li {
-    margin: 0 1rem;
-    overflow: hidden;
-  }
 
-  .mobile-menu {
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-*/
 .fa-bars{
     color: white;
     background-color: transparent;
@@ -515,17 +501,15 @@ h5{
     .testimonials-title{
         font-size: 20px;
     }
+
     .testimonials{
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 1%;
-        gap: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
     }
+
     .test-section{
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-top: 5%;
-        padding-left: 1%;
+        display: inline-block;
     }
     .customer{
         padding-bottom: 2%;
