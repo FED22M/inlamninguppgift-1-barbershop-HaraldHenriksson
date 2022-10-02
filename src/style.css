@@ -472,12 +472,13 @@ h5{
         flex-wrap: wrap;
     }
     .about-pic{
-        height: 50vh;
+        height: 45%;
+        margin-top: 10%;
         margin-left: 25%;
 
     }
     .about-text{
-        margin-top: 2%;
+        margin-top: 1%;
         margin-left: 2%;
         margin-right: 2%;
     }
@@ -510,7 +511,16 @@ h5{
 
     .test-section{
         display: inline-block;
+        width: 400px;
+        margin-top: 10%;
     }
+    .review-text{
+        display: none;
+    }
+    .test-section span{
+        display: none;
+    }
+
     .customer{
         padding-bottom: 2%;
         padding-top: 2%;
