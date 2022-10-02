@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4{
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 /* First Page */
@@ -31,10 +31,23 @@ header{
     text-decoration: none;
     font-size: 20px;
 }
+button + .menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 button{
     display: none;
 }
+
+.fa-bars{
+    color: white;
+    background-color: transparent;
+    padding: 0;
+}
+
 
 nav {
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -113,10 +126,11 @@ nav {
 
 .text{
     color: rgb(252, 252, 252);
-    font-size: 25px;
+    font-size: 20px;
     border-left: solid rgb(192, 152, 104);
     padding-left: 10%;
-    margin-top: 5%;
+    margin-top: 3%;
+    font-weight: 200;
 }
 
 .main-btn {
@@ -367,23 +381,34 @@ section:nth-child(odd) {
 
 
 @media(max-width: 1023px){
-   /* *{
-        text-align: center;
-    }
-    */
     .nav-btn{
         display: none;
     }   
 
+    button.menu-open + .menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
     button{
         display: block;
+        font-size: 40px;
+        background-color: transparent;
+        border: 0;
     }
-
+  .menu ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .menu ul li{
+    display: block;
+  }
     .content{
         flex-wrap: wrap;
         margin-left: 2%;
         padding-top: 30%;
     }
+
     .text{
         border-left: 0;
         margin-top: 2%;

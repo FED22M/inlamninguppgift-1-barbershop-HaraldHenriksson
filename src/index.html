@@ -24,9 +24,20 @@
       <header>
         <nav>
           <a class="logo" href="#">BARBERSHOP</a>
-          <button>
+          <button id="menu-button" >
             <i class="fa-solid fa-bars"></i>
           </button>
+          <div class="menu">       
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">PRICING</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li><a href="#">TEAM</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
           <div class="nav-btn">
             <ul>
               <li><a href="#">HOME</a></li>
@@ -292,5 +303,8 @@
     </div>
     <!--footer end-->
   </body>
-  <script></script>
+  <script>const menuBtn = document.querySelector('#menu-button');
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('menu-open');
+    });</script>
 </html>
